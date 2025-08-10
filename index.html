@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Spotify - Web Player: Music for everyone</title>
+
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-options" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-options">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-options nav-options">
+                        <img src="./assets/library_icon.png">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-box" style="background-color: #121212;">
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">Let's find some podcasts to follow </p>
+                        <p class="box-p2">We'll keep you updated on new episodes</p>
+                        <button class="badge">Browse Podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons" style="background-color: #121212;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#fffff"
+                        fill="none">
+                        <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff"
+                        fill="none">
+                        <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="#ffffff"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <div class="sticky-nav-options" style="background-color: #121212">
+                    <button class="badge nav-item">Explore Premium</button>
+                    <button class="badge nav-item dark-badge"><i class="fa-regular fa-circle-down"
+                            style="margin-right: 5px;"></i>Install App</button>
+                    <i class="fa-regular fa-user"></i>
+                </div>
+            </div>
+            <h2 style="margin-block-start: 0.5rem; margin-block-end: 0.5rem;">Recently Played</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67616d00001e02e2dd29cdaa3fadbdc26d59c4" class="card-img">
+                    <p style="font-size: 0.85rem;">Baby Blue-<br>Remastered 2010</p>
+                </div>
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67616d00001e02d3ce97395ff522b0d70c1094" class="card-img">
+                    <p style="font-size: 0.85rem;">Riptide</p>
+                </div>
+
+            </div>
+
+
+
+            <h2 style="margin-block-start: 0.5rem; margin-block-end: 0.5rem;">Recommended for you</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67706f00000002665f3dd41399b0e59bf827ac" class="card-img">
+                    <p class="card-info">The finest set of Telugu msuic for the past 10...</p>
+                </div>
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67706f000000020211c3824ec406af5ec2f735" class="card-img">
+                    <p class="card-info">Best of the Indian Indie scene.Cover-Fah...</p>
+                </div>
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67706f0000000290115ca1fa5ada34861f6a85" class="card-img">
+                    <p class="card-info">India's Rap Scene.Cover-Dhandha Nyoliwala...</p>
+                </div>
+
+            </div>
+
+            <h2 style="margin-block-start: 0.5rem; margin-block-end: 0.5rem;">Featured Charts</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_in_default.jpg"
+                        class="card-img">
+                    <p class="card-title">Viral 50 - India</p>
+                    <p class="card-info">Your daily update of the most viral tracks...</p>
+                </div>
+                <div class="card">
+                    <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg"
+                        class="card-img">
+                    <p class="card-title">Top 50 - India</p>
+                    <p class="card-info">Your daily update of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg"
+                        class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your weekly update of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg"
+                        class="card-img">
+                    <p class="card-title">Viral 50 - Global</p>
+                    <p class="card-info">Your weekly update of the most played...</p>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="music-player">
+            <div class="album">
+                <img src="https://i.scdn.co/image/ab67616d00004851e2dd29cdaa3fadbdc26d59c4" alt="Not found">
+                <div class="album-info">
+                    <span class="song-name" style="font-size: small;">Baby Blue - Remastered 2010</span>
+                    <span class="artist-name" style="font-size: x-small; opacity: 0.6;">BadFinger</span>
+                </div>
+            </div>
+             <!-- <div class="album-info">
+                    <span class="song-name" style="margin-left: -2rem;">Baby Blue</span>
+                    <span class="artist-name">Action Bronson</span>
+                </div> -->
+            
+            <div class="player">
+                <div class="player-controls">
+                    <img src="./assets/player_icon1.png" class="player-control-icon">
+                    <img src="./assets/player_icon2.png" class="player-control-icon">
+                    <img src="./assets/player_icon3.png" class="player-control-icon" style="opacity: 1; height: 2rem;">
+                    <img src="./assets/player_icon4.png" class="player-control-icon">
+                    <img src="./assets/player_icon5.png" class="player-control-icon">
+                </div>
+                <div class="playback-bar">
+                    <span class="Cur-time" style="font-size: smaller;">00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar" id="progress-bar" step="1">
+                    <span class="tot-time" style="font-size: smaller;">3:33</span>
+                </div>
+            </div>
+            <div class="controls">
+                <div class="volume-control">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff"
+                        fill="none">
+                        <path d="M19 9C19.6254 9.81968 20 10.8634 20 12C20 13.1366 19.6254 14.1803 19 15"
+                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M16 14.8135V9.18646C16 6.04126 16 4.46866 15.0747 4.0773C14.1494 3.68593 13.0604 4.79793 10.8823 7.02192C9.7544 8.17365 9.11086 8.42869 7.50605 8.42869C6.10259 8.42869 5.40086 8.42869 4.89677 8.77262C3.85036 9.48655 4.00854 10.882 4.00854 12C4.00854 13.118 3.85036 14.5134 4.89677 15.2274C5.40086 15.5713 6.10259 15.5713 7.50605 15.5713C9.11086 15.5713 9.7544 15.8264 10.8823 16.9781C13.0604 19.2021 14.1494 20.3141 15.0747 19.9227C16 19.5313 16 17.9587 16 14.8135Z"
+                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <input type="range" min="0" max="100" class="volume-bar" step="1" id="volume-bar">
+                </div>
+                <div class="icons">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="scriptt.js"></script>
+</body>
+
+</html>
